@@ -41,7 +41,7 @@ def createDB():
 
 @app.route('/sudoku/solve', methods=['POST'])
 def solve_sudoku():
-    board_str = request.get_data().decode('utf-8')["sudoku"]
+    board_str = request.get_data().decode('utf-8')
     print(board_str)
     board = [[int(board_str[row*9+col]) for col in range(9)] for row in range(9)]
     solver = Solver.SudokuSolver(board)

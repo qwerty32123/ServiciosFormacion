@@ -5,7 +5,7 @@ url = 'http://localhost:5000/sudoku/solve'
 headers = {'Content-Type': 'text/plain'}
 
 # define the Sudoku data to insert
-data = '530070000600195000098000060800060003400803001700020006060000280000419005000080079'
+data = '708100495040560008095080000003601507109800364580004910000006270002700009950200643'
 
 # send a POST request to create a new Sudoku
 response = requests.post(url, data=data,headers=headers)
